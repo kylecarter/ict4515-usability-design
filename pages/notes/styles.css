@@ -1,0 +1,30 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.main {
+    padding: 6rem 0;
+    flex-grow: 2;
+}
+
+.listUnstyled {
+    margin-left: -.5rem;
+}
+
+.section {
+    margin-bottom: 1.125rem;
+}
+
+.section + .section {
+    border-top: thin solid #777777;
+    padding-top: 1.125rem;
+}
+
+@media screen and (max-width: 991px) {
+    .main {
+        padding: 4rem 0;
+    }
+}

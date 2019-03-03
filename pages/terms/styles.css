@@ -1,0 +1,19 @@
+.breadcrumb {
+    display: flex;
+    list-style-type: none;
+    margin: 0 0 1rem -5px;
+    padding: 0;
+}
+
+.breadcrumb>li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 5px;
+    padding: 0;
+}
+
+.breadcrumb>li+li::before {
+    content: '|';
+    display: inline-block;
+    margin: 0 10px 0 3px;
+}
