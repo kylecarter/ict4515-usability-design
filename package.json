@@ -6,7 +6,12 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "postinstall": "npm run build"
+  },
+  "engines": {
+    "node": "10.9.0",
+    "npm": "6.2.0"
   },
   "repository": "git+https://github.com/kylecarter/ict4515-usability-design.git",
   "author": "Kyle A. Carter",
