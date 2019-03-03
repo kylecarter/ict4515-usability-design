@@ -1,0 +1,9 @@
+.wrapper {
+    margin: 0 8px;
+    flex-grow: .96;
+    text-decoration: none;
+}
+
+.buttons {
+    display: flex;
+}

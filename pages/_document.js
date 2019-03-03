@@ -17,21 +17,22 @@ class MyDocument extends Document {
                     <meta name="HandheldFriendly" content="true" />
                     <link rel="canonical" href="https://kylecarter-ict4515.herokuapp.com/" />
                     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Roboto:300,300i,400,400i,500,500i" />
-                    <style global jsx>{`
-                        .visually-hidden {
-                            border: 0;
-                            clip: rect(1px, 1px, 1px, 1px);
-                            clip-path: inset(100%);
-                            height: 1px;
-                            overflow: hidden;
-                            padding: 0;
-                            position: absolute;
-                            width: 1px;
-                        }
-                    `}</style>
+                    <link rel="stylesheet" href="/static/reset.css" />
+                    <link rel="stylesheet" href="/static/normalize.css" />
                 </Head>
-                <body>
-                    <a href="#main-content" className="visually-hidden">Skip to main content.</a>
+                <body style={{
+                    boxSizing: 'border-box'
+                }}>
+                    <a href="#main-content" style={{
+                        border: 0,
+                        clip: 'rect(1px, 1px, 1px, 1px)',
+                        clipPath: 'inset(100%)',
+                        height: '1px',
+                        overflow: 'hidden',
+                        padding: 0,
+                        position: 'absolute',
+                        width: '1px'
+                    }}>Skip to main content.</a>
                     <Main />
                     <NextScript />
                 </body>
