@@ -13,6 +13,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import EditIcon from '@material-ui/icons/Edit';
 import { withStyles } from '@material-ui/core/styles';
 import underscore from 'underscore';
+import Head from 'next/head'
 
 // Components
 import Navbar from '../../components/Navbar';
@@ -28,6 +29,9 @@ class Notes extends React.Component {
     render() {
         const { classes } = this.state;
         return (<div className={[styles.content].join(' ')}>
+            <Head>
+                <title>My Notes | Awesome Notes</title>
+            </Head>
             <Navbar authenticated={true} />
             <main id="main-content" className={styles.main}><Grid container justify="center" alignItems="center" spacing={16}>
                 <Grid item md={2}>

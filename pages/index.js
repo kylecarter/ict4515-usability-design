@@ -9,6 +9,7 @@ import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 import underscore from 'underscore';
+import Head from 'next/head'
 
 // Components
 import Page from '../components/Page';
@@ -24,7 +25,11 @@ class Home extends React.Component {
 
     render() {
         const { classes } = this.state;
-        return (<Page className={classes.page}><main id="main-content" className={styles.main}>
+        return (<Page className={classes.page}>
+        <Head>
+            <title>Home | Awesome Notes</title>
+        </Head>
+        <main id="main-content" className={styles.main}>
             <header className={classes.hero}><Grid container justify="center" alignItems="center" spacing={16}>
                 <Grid item md={5}>
                     <Typography component="h1" variant="h2" gutterBottom className={[classes.text, classes.headline].join(' ')}>Don't just take notes; take Awesome Notes.</Typography>

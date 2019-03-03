@@ -12,6 +12,7 @@ import underscore from 'underscore';
 // Components
 import Page from '../../components/Page';
 import styles from './styles.css'
+import Head from 'next/head'
 
 const _ = underscore;
 class Login extends React.Component {
@@ -23,7 +24,11 @@ class Login extends React.Component {
 
     render() {
         const { classes } = this.state;
-        return (<Page className={classes.page}><main id="main-content" className={[styles.main, classes.main].join(' ')}>
+        return (<Page className={classes.page}>
+        <Head>
+            <title>User Log In | Awesome Notes</title>
+        </Head>
+        <main id="main-content" className={[styles.main, classes.main].join(' ')}>
             <Paper className={classes.paper} elevation={1}>
                 <form className={styles.form} action="/notes" action="post" onSubmit={this.redirect}>
                     <Typography component="h2" variant="h4">Log In</Typography>

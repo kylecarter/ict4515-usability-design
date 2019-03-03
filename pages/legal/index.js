@@ -2,13 +2,18 @@
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Link from 'next/link';
+import Head from 'next/head'
 
 // Components
 import Page from '../../components/Page';
 
 import styles from './styles.css'
 const Legal = props => {
-    return (<Page><main id="main-content" className={styles.main}><Grid container justify="center" alignItems="center" spacing={16}>
+    return (<Page>
+        <Head>
+            <title>Legal Notice | Awesome Notes</title>
+        </Head>
+        <main id="main-content" className={styles.main}><Grid container justify="center" alignItems="center" spacing={16}>
         <Grid item md={7}>
             <Typography component="h1" variant="h2" gutterBottom>Legal Notice</Typography>
             <ol className={styles.breadcrumb}>
