@@ -1,0 +1,35 @@
+{
+  "name": "ict4515-usability-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": "git+https://github.com/kylecarter/ict4515-usability-design.git",
+  "author": "Kyle A. Carter",
+  "license": "GPL-2.0-or-later",
+  "bugs": {
+    "url": "https://github.com/kylecarter/ict4515-usability-design/issues"
+  },
+  "homepage": "https://github.com/kylecarter/ict4515-usability-design#readme",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "@material-ui/icons": "^3.0.2",
+    "@zeit/next-css": "^1.0.1",
+    "autoprefixer": "^9.4.9",
+    "cssnano": "^4.1.10",
+    "draft-js": "^0.10.5",
+    "isotope": "^1.0.0-alpha.3",
+    "next": "^8.0.3",
+    "postcss": "^7.0.14",
+    "postcss-css-variables": "^0.12.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "underscore": "^1.9.1"
+  }
+}
