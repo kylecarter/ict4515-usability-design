@@ -9,7 +9,8 @@ import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 import underscore from 'underscore';
-import Head from 'next/head'
+import Head from 'next/head';
+import Router from 'next/router';
 
 // Components
 import Page from '../components/Page';
@@ -107,7 +108,7 @@ class Home extends React.Component {
 
     redirect(e) {
         e.preventDefault();
-        window.location.href =  '/notes';
+        Router.push('/notes');
     }
 }
 export default withStyles(theme => ({
