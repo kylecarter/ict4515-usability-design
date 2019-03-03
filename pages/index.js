@@ -19,6 +19,7 @@ class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = _.extend({}, props);
+        this.redirect = this.redirect.bind(this);
     }
 
     render() {
@@ -29,7 +30,7 @@ class Home extends React.Component {
                     <Typography component="h1" variant="h2" gutterBottom className={[classes.text, classes.headline].join(' ')}>Don't just take notes; take Awesome Notes.</Typography>
                     <Typography variant="headline" className={classes.text} gutterBottom>Awesome Note is a note app made help keep you productive and focused on the things you need to remember.</Typography>
                 </Grid>
-                <Grid item md={7}><Paper className={classes.paper} elevation={1}><form className={styles.form} action="/notes" method="post">
+                <Grid item md={7}><Paper className={classes.paper} elevation={1}><form className={styles.form} action="/notes" method="post" onSubmit={this.redirect}>
                     <Typography component="h2" variant="h4">Sign Up</Typography>
                     <Grid container spacing={16}>
                         <Grid item md={6}>
@@ -37,6 +38,7 @@ class Home extends React.Component {
                                 required
                                 fullWidth
                                 id="first_name"
+                                name="first_name"
                                 label="First Name"
                                 defaultValue=""
                                 margin="normal"
@@ -50,6 +52,7 @@ class Home extends React.Component {
                                 required
                                 fullWidth
                                 id="last_name"
+                                name="last_name"
                                 label="Last Name"
                                 defaultValue=""
                                 margin="normal"
@@ -64,13 +67,14 @@ class Home extends React.Component {
                                 fullWidth
                                 type="email"
                                 id="email"
+                                name="email"
                                 label="Email"
                                 defaultValue=""
                                 margin="normal"
                                 placeholder="john.doe@email.com"
                                 autoComplete="email"
                                 variant="outlined"
-                                helperText="This will be your username."
+                                helperText="This will be used as your username."
                             />
                         </Grid>
                         <Grid item xs={12}>
@@ -79,6 +83,7 @@ class Home extends React.Component {
                                 fullWidth
                                 type="password"
                                 id="password"
+                                name="password"
                                 label="Password"
                                 defaultValue=""
                                 margin="normal"
@@ -93,6 +98,11 @@ class Home extends React.Component {
                 </form></Paper></Grid>
             </Grid></header>
         </main></Page>);
+    }
+
+    redirect(e) {
+        e.preventDefault();
+        window.location.href =  '/notes';
     }
 }
 export default withStyles(theme => ({

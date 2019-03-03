@@ -18,13 +18,14 @@ class Login extends React.Component {
     constructor(props) {
         super(props);
         this.state = _.extend({}, props);
+        this.redirect = this.redirect.bind(this);
     }
 
     render() {
         const { classes } = this.state;
         return (<Page className={classes.page}><main id="main-content" className={[styles.main, classes.main].join(' ')}>
             <Paper className={classes.paper} elevation={1}>
-                <form className={styles.form} action="/notes" action="post">
+                <form className={styles.form} action="/notes" action="post" onSubmit={this.redirect}>
                     <Typography component="h2" variant="h4">Log In</Typography>
                     <TextField
                         required
@@ -54,6 +55,11 @@ class Login extends React.Component {
                 </form>
             </Paper>
         </main></Page>);
+    }
+
+    redirect(e) {
+        e.preventDefault();
+        window.location.href = '/notes';
     }
 }
 export default withStyles(theme => ({
