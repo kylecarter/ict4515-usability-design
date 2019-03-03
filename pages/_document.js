@@ -19,6 +19,7 @@ class MyDocument extends Document {
                     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Roboto:300,300i,400,400i,500,500i" />
                     <link rel="stylesheet" href="/static/reset.css" />
                     <link rel="stylesheet" href="/static/normalize.css" />
+                    <link rel="stylesheet" href="/static/styles.css" />
                 </Head>
                 <body style={{
                     boxSizing: 'border-box'

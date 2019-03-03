@@ -4,6 +4,26 @@
     text-decoration: none;
 }
 
-.buttons {
-    display: flex;
+@media screen and (min-width: 992px) {
+    .buttons {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .buttons {
+        height: 100%;
+        max-width: 320px;
+        padding: 0 0 1rem;
+        position: fixed;
+        right: -100%;
+        top: 0;
+        transition: right .15s ease-in-out;
+        width: 100%;
+        z-index: 100001;
+    }
+
+    .expose {
+        right: 0;
+    }
 }
