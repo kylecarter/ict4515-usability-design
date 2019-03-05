@@ -12,7 +12,7 @@ class MyDocument extends Document {
                 <Head>
                     <meta name="viewport" content="minimum-scale=1, width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no" />
                     <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-                    <meta charset="utf-8" />
+                    <meta charSet="utf-8" />
                     <meta name="robots" content="INDEX,FOLLOW" />
                     <meta name="HandheldFriendly" content="true" />
                     <link rel="canonical" href="https://kylecarter-ict4515.herokuapp.com/" />

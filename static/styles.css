@@ -1,3 +1,47 @@
 body * {
     box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.RichEditor-styleButton {
+    padding: .5rem;
+    font-weight: 500;
+}
+
+.DraftEditor-root {
+    height: 250px;
+    overflow: scroll;
+}
+
+.public-DraftStyleDefault-block {
+    line-height: 1.4;
+    margin-bottom: 1.125rem;
+}
+
+.public-DraftEditorPlaceholder-root {
+    position: absolute;
+    opacity: 0.6;
+}
+
+.DraftEditor-editorContainer {
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.DraftEditor-editorContainer h4 {
+    font-weight: 500;
+    font-size: 1.25em;
+}
+
+.DraftEditor-editorContainer ul,
+.DraftEditor-editorContainer ul>li {
+    list-style-type: disc;
+    margin-left: .5rem;
+}
+
+.DraftEditor-editorContainer ol,
+.DraftEditor-editorContainer ol>li {
+    list-style-type: decimal;
+    margin-left: .5rem;
 }

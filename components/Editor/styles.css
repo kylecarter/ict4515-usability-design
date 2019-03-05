@@ -21,7 +21,6 @@
     padding: 5px;
 }
 
-.textarea {
-    min-height: 250px;
-    background-color: #f7f7f7;
+.active {
+    color: #2196f3 !important;
 }

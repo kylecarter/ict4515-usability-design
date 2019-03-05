@@ -1,0 +1,65 @@
+.card h1,
+.card h2,
+.card h3,
+.card h4,
+.card h5,
+.card h6 {
+    font-family: inherit;
+    font-weight: 500;
+    margin-bottom: .25rem;
+}
+
+.card h1 {
+    font-size: 2em;
+}
+
+.card h2 {
+    font-size: 1.75em;
+}
+
+.card h3 {
+    font-size: 1.5em;
+}
+
+.card h4,
+.card .title {
+    font-size: 1.25em;
+}
+
+.card h5 {
+    font-size: 1.125em;
+}
+
+.card h6 {
+    font-size: 1em;
+}
+
+.card p {
+    font-size: 90%;
+    margin-bottom: .5rem
+}
+
+.card .title {
+    margin: 0 0 .5rem;
+}
+
+.meta {
+    font-size: .875rem;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.meta>ul {
+    margin-left: .675rem;
+}
+
+.meta>ul>li {
+    display: inline-block;
+    margin-right: .675rem;
+}
+
+.menu {
+    position: absolute;
+    right: 50px;
+    top: 10px;
+}
